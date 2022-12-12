@@ -1,0 +1,119 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main{
+  height: calc(100vh - 150px);
+}
+
+header,footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/bj.JPG');
+  background-size : 20px;
+}
+
+.logo-title-container{
+  display: flex;
+  align-items: center;
+}
+
+header{
+  height: 75px;
+}
+
+footer{
+  height: 75px;
+}
+
+
+h1, footer h4{
+  color: white;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h4{
+  font-size: .9em;
+}
+
+
+header img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.logo-container{
+  justify-self: flex-start;
+}
+
+.nav ul{
+  display: flex;
+  list-style: none;
+}
+
+ul li{
+  padding: 0 30px;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: all .5s;
+}
+
+a:hover{
+  color: #1f6763;
+  position: relative;
+  top: 0;
+}
+
+header a::after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  display: none;
+}
+
+header a:hover::after{
+  display: block;
+}
+
+.np-card{
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  width: 350px;
+  border-radius: 20px;
+  background-image: url('../img/bj.JPG');
+  background-size : 20px;
+}
+
+.info-container{
+  position: relative;
+  top: 0;
+}
+
+.icon{
+  width: 35px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+}
