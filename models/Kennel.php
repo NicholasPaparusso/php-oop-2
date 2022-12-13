@@ -11,7 +11,7 @@ class Kennel extends Product {
    parent::__construct($_brand, $_name, $_price, $_image, $_category);
     $this->size =$_size ;
     $this->material = $_material;
-    $this->supportedWeigth = $_supportedWeigth;
+    $this->supportedWeight = $_supportedWeigth;
   }
 }
 

@@ -68,7 +68,7 @@
           <span class="price">Costo: &euro;<?php echo number_format("$kennel->price",2,',','.')?></span>
           <p class="ingredients"> Materiale: <?php echo $kennel->material?></p>
           <p>Dimensioni: <?php echo $kennel->size ?></p>
-          <p>Peso supportato: <?php echo $kennel->supportedWeigth ?></p>
+          <p>Peso supportato: <?php echo $kennel->supportedWeight ?></p>
         </div>
 
        </div>

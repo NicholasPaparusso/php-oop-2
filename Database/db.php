@@ -161,7 +161,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/952/non_2x/dog-icon-isolated-on-white-background-puppy-head-pictogram-free-vector.jpg',
     "material" => 'velluto a coste',
     "size" => '50 x 40 x 23h cm',
-    "supportedWeigth" => "Fino a 6 kg",
+    "supportedWeight" => "Fino a 6 kg",
   ],
   [
     "brand" => 'Bosco',
@@ -172,7 +172,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
     "material" => 'Policotone',
     "size" => '60 x 45 x 13 cm',
-    "supportedWeigth" => "Fino a 5kg",
+    "supportedWeight" => "Fino a 5kg",
   ],
   [
     "brand" => 'Heritage',
@@ -183,7 +183,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/952/non_2x/dog-icon-isolated-on-white-background-puppy-head-pictogram-free-vector.jpg',
     "material" => 'velluto a coste',
     "size" => '50 x 40 x 23h cm',
-    "supportedWeigth" => "Fino a 6 kg",
+    "supportedWeight" => "Fino a 6 kg",
   ],
   [
     "brand" => 'Bosco',
@@ -194,7 +194,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
     "material" => 'Policotone',
     "size" => '60 x 45 x 13 cm',
-    "supportedWeigth" => "Fino a 5kg",
+    "supportedWeight" => "Fino a 5kg",
   ],
   [
     "brand" => 'Bosco',
@@ -205,7 +205,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
     "material" => 'Policotone',
     "size" => '60 x 45 x 13 cm',
-    "supportedWeigth" => "Fino a 5kg",
+    "supportedWeight" => "Fino a 5kg",
   ],
 
   [
@@ -217,7 +217,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
     "material" => 'Policotone',
     "size" => '60 x 45 x 13 cm',
-    "supportedWeigth" => "Fino a 5kg",
+    "supportedWeight" => "Fino a 5kg",
   ],
   [
     "brand" => 'Bosco',
@@ -228,7 +228,7 @@
     "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
     "material" => 'Policotone',
     "size" => '60 x 45 x 13 cm',
-    "supportedWeigth" => "Fino a 5kg",
+    "supportedWeight" => "Fino a 5kg",
   ],
  ];
 
@@ -245,7 +245,7 @@
   };
 
   foreach($kennelList as $kennel){
-    $kennels [] = new Kennel($kennel['brand'],$kennel['name'],$kennel['price'],$kennel['image'],new Category($kennel['type'], $kennel['icon']) , $kennel['size'], $kennel['material'], $kennel['supportedWeigth'] );
+    $kennels [] = new Kennel($kennel['brand'],$kennel['name'],$kennel['price'],$kennel['image'],new Category($kennel['type'], $kennel['icon']) , $kennel['size'], $kennel['material'], $kennel['supportedWeight'] );
   }
 
 ?>
