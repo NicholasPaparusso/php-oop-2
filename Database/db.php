@@ -35,7 +35,7 @@
       "size" => 'Ø 6,5 cm'
     ],
     [
-      "brand" => 'Cat&R  ina',
+      "brand" => 'Cat&Rina',
       "name" => 'Topo con elastico',
       "price" => 4.50,
       "image" => "https://www.recordit.com/2509-thickbox_default/giochi-per-gatti-con-elastico-verdi-assortiti-12-pcs-conf.jpg",
@@ -46,15 +46,45 @@
     ],
   ];
 
+ $kennelList = [
+  [
+    "brand" => 'Heritage',
+    "name" => 'Cuccetta per cani',
+    "price" => 37.50,
+    "image" => "https://www.recordit.com/8298-thickbox_default/cuccetta-per-cani-e-gatti-heritage.jpg",
+    "type" => 'dog',
+    "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/952/non_2x/dog-icon-isolated-on-white-background-puppy-head-pictogram-free-vector.jpg',
+    "material" => 'velluto a coste',
+    "size" => '50 x 40 x 23h cm',
+    "supportedWeigth" => "Fino a 6 kg",
+  ],
+  [
+    "brand" => 'Bosco',
+    "name" => 'Cuccetta per gatti',
+    "price" => 23.90,
+    "image" => "https://www.recordit.com/3200-thickbox_default/cuccia-per-cani-e-gatti-bosco.jpg",
+    "type" => 'cat',
+    "icon" => 'https://static.vecteezy.com/system/resources/previews/006/059/848/non_2x/cat-line-icon-isolated-on-white-background-kitty-sign-free-vector.jpg',
+    "material" => 'Policotone',
+    "size" => '60 x 45 x 13 cm',
+    "supportedWeigth" => "Fino a 5kg",
+  ],
+ ];
+
   $foods = [];
   $toys = [];
+  $kennels = [];
 
   foreach($foodList as $food){
     $foods [] = new Food($food['brand'],$food['name'],$food['price'],$food['image'],new Category($food['type'], $food['icon']) , $food['ingredients'], $food['taste'] );
   };
 
   foreach($toyList as $toy){
-    $toys [] = new Toy($toy['brand'],$toy['name'],$toy['price'],$toy['image'],new Category($toy['type'], $toy['icon']) , $toy['ingredients'], $toy['taste'] );
+    $toys [] = new Toy($toy['brand'],$toy['name'],$toy['price'],$toy['image'],new Category($toy['type'], $toy['icon']) , $toy['material'], $toy['size'] );
+  };
+
+  foreach($kennelList as $kennel){
+    $kennels [] = new Kennel($kennel['brand'],$kennel['name'],$kennel['price'],$kennel['image'],new Category($kennel['type'], $kennel['icon']) , $kennel['size'], $kennel['material'], $kennel['supportedWeigth'] );
   }
 
 ?>

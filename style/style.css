@@ -101,7 +101,7 @@ header a:hover::after{
   display: flex;
   align-items: center;
   width: 400px;
-  height: 250px;
+  height: 300px;
 
   border-radius: 20px;
   background-image: url('../img/bj.JPG');
@@ -112,6 +112,8 @@ header a:hover::after{
 .image-container img{
   width: 130px;
   height: 130px;
+  margin-left: 20px;
+  border-radius: 50%;
 }
 
 .info-container{

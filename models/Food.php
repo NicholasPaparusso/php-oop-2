@@ -5,7 +5,7 @@
     public $ingredients ;
     public $taste;
 
-    public function __construct($_brand, $_name, $_price, $_image, $_category, $_ingredients, $_taste)
+    public function __construct($_brand, $_name, $_price, $_image, Category $_category, $_ingredients, $_taste)
     {
      parent::__construct($_brand, $_name, $_price, $_image, $_category);
       $this->ingredients = $_ingredients;
