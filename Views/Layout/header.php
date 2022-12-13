@@ -7,15 +7,19 @@
 <div class="nav">
   <ul>
     <li>
-      <a href="#">Home</a>
+      <a href="/php-oop-2">Home</a>
     </li>
 
     <li>
-      <a href="#">Dog's Products</a>
+      <a href="/php-oop-2/food.php">Foods</a>
     </li>
 
     <li>
-      <a href="#">Cat's Products</a>
+      <a href="/php-oop-2/toy.php">Toys</a>
+    </li>
+
+    <li>
+      <a href="/php-oop-2/kennel.php">Kennels</a>
     </li>
     
   </ul>

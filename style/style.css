@@ -5,9 +5,9 @@ body{
 main{
   margin-top: 75px;
   background-image: url('../img/bj-main.jpg');
-  /* background-repeat: no-repeat ;
-  background-size: cover; */
   background-size : 5px;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
 }
 
 header,footer{
