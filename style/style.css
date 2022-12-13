@@ -4,7 +4,10 @@ body{
 
 main{
   margin-top: 75px;
-
+  background-image: url('../img/bj-main.jpg');
+  /* background-repeat: no-repeat ;
+  background-size: cover; */
+  background-size : 5px;
 }
 
 header,footer{
@@ -47,6 +50,7 @@ h4{
 
 h2{
   color: #29bab5;
+  text-align: center;
 }
 
 header img{
