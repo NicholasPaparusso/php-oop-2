@@ -1,6 +1,7 @@
 <main>
   <div class="container-fluid p-5">
     <div class="row">
+      <h2>Foods</h2>
       <?php foreach($foods as $food) : ?>
       <div class="col-3">
 
@@ -22,7 +23,10 @@
        </div>
       </div>
       <?php endforeach ; ?>
+    </div>
 
+    <div class="row">
+      <h2>Toys</h2>
       <?php foreach($toys as $toy) : ?>
       <div class="col-3">
 
@@ -44,7 +48,10 @@
        </div>
       </div>
       <?php endforeach ; ?>
+    </div>
 
+    <div class="row">
+      <h2>Kennels</h2>
       <?php foreach($kennels as $kennel) : ?>
       <div class="col-3">
 
@@ -61,12 +68,13 @@
           <span class="price">Costo: &euro;<?php echo number_format("$kennel->price",2,',','.')?></span>
           <p class="ingredients"> Materiale: <?php echo $kennel->material?></p>
           <p>Dimensioni: <?php echo $kennel->size ?></p>
-          <p>Peso supportato: <?php echo $kennel->size ?></p>
+          <p>Peso supportato: <?php echo $kennel->supportedWeigth ?></p>
         </div>
 
        </div>
       </div>
       <?php endforeach ; ?>
+    </div>
     </div>
   </div>
 </main>

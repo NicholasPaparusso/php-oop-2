@@ -3,7 +3,8 @@ body{
 }
 
 main{
-  height: calc(100vh - 150px);
+  margin-top: 75px;
+
 }
 
 header,footer{
@@ -21,6 +22,9 @@ header,footer{
 
 header{
   height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 footer{
@@ -41,6 +45,9 @@ h4{
   font-size: .9em;
 }
 
+h2{
+  color: #29bab5;
+}
 
 header img{
   width: 75px;
@@ -101,8 +108,8 @@ header a:hover::after{
   display: flex;
   align-items: center;
   width: 400px;
-  height: 300px;
-
+  height: 250px;
+  margin-bottom: 50px;
   border-radius: 20px;
   background-image: url('../img/bj.JPG');
   background-size : 20px;
@@ -119,7 +126,7 @@ header a:hover::after{
 .info-container{
   position: relative;
   top: 0;
-  width: 200px;
+  width: 220px;
 }
 
 .info-container h4{
