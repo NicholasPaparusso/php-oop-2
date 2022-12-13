@@ -99,21 +99,43 @@ header a:hover::after{
   border: 2px solid white;
   color: white;
   display: flex;
-  width: 350px;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+
   border-radius: 20px;
   background-image: url('../img/bj.JPG');
   background-size : 20px;
+  
+}
+
+.image-container img{
+  width: 130px;
+  height: 130px;
 }
 
 .info-container{
   position: relative;
   top: 0;
+  width: 200px;
+}
+
+.info-container h4{
+  font-size: 1.3em;
+}
+
+.info-container h5{
+  font-size: 1em;
 }
 
 .icon{
   width: 35px;
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: -20px;
   border-radius: 50%;
+}
+
+.ingredients{
+  font-size: .8em;
 }
